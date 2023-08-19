@@ -7,7 +7,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.center}>
-        <Text>Sachithra Jayaweera web designing!!!!!!!!!!</Text>
+        <Text>sachithra</Text>
       </View>
     </View>
   );
