@@ -1,27 +1,38 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
-
-const {height} = Dimensions.get('screen');
+import { View } from 'react-native';
+import HeroSection from './components/hero_section/hero_section';
+import Contact from './components/contact_section/contact_section';
+import Footer from './components/footer_section/footer_section';
+import MyPortfolio from './components/portfolio_section/my_portfolio';
+import MyServices from './components/servises_section/my_services';
+import AboutMeSection from './components/about_me_section/about_me';
+//import NavigationBar from './components/nav_bar/nav_bar';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.center}>
-        <Text>sachithra</Text>
-      </View>
+    <View>
+      <div>
+        <HeroSection />
+      </div>
+      <div>
+        <AboutMeSection />
+      </div>
+      <div>
+        <MyServices />
+      </div>
+      <div>
+          <MyPortfolio />
+      </div>
+      <div>
+          <Contact />
+      </div>
+      <div>
+          <Footer />
+      </div>
     </View>
+
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    height,
-  },
-  center: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default App;
