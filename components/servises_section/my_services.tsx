@@ -1,135 +1,242 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight, Dimensions } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faLayerGroup, faCheckCircle, faSearch, faShieldAlt, faWrench} from '@fortawesome/free-solid-svg-icons';
+import { faClock, faLayerGroup, faCheckCircle, faSearch, faShieldAlt, faWrench } from '@fortawesome/free-solid-svg-icons';
 
+const windowWidth = Dimensions.get('window').width;
+
+const isMobile = windowWidth < 768;
 
 const MyServices = () => {
+
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Services</Text>
 
-            
-            <View style={styles.row}>
+            {isMobile ? (
+                <>
+                    <View style={styles.column}>
+                        <TouchableHighlight
+                            style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                            activeOpacity={0.7}
+                            underlayColor="#008000" // Highlight color on touch 
+                        >
+                            <View style={styles.cardBody}>
+                                <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                <Text style={styles.cardTitle}>Website Development</Text>
+                                <Text style={styles.cardText}>
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    </View>
 
-                <View style={styles.column}>
-                    <TouchableHighlight
-                        style={[styles.card, styles.servicesText, styles.cardWithBorder]}
-                        activeOpacity={0.7}
-                        underlayColor="#008000" // Highlight color on touch 
-                    >
-                        <View style={styles.cardBody}>
-                        <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
-                            <Text style={styles.cardTitle}>Website Development</Text>
-                            <Text style={styles.cardText}>
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </Text>
+                    <View style={styles.column}>
+                        <TouchableHighlight
+                            style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                            activeOpacity={0.7}
+                            underlayColor="#008000" // Highlight color on touch 
+                        >
+                            <View style={styles.cardBody}>
+                                <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                <Text style={styles.cardTitle}>Website Development</Text>
+                                <Text style={styles.cardText}>
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    </View>
+
+
+                    <View style={styles.column}>
+                        <TouchableHighlight
+                            style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                            activeOpacity={0.7}
+                            underlayColor="#008000" // Highlight color on touch 
+                        >
+                            <View style={styles.cardBody}>
+                                <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                <Text style={styles.cardTitle}>Website Development</Text>
+                                <Text style={styles.cardText}>
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    </View>
+
+                    <View style={styles.column}>
+                        <TouchableHighlight
+                            style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                            activeOpacity={0.7}
+                            underlayColor="#008000" // Highlight color on touch 
+                        >
+                            <View style={styles.cardBody}>
+                                <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                <Text style={styles.cardTitle}>Website Development</Text>
+                                <Text style={styles.cardText}>
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    </View>
+
+                    <View style={styles.column}>
+                        <TouchableHighlight
+                            style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                            activeOpacity={0.7}
+                            underlayColor="#008000" // Highlight color on touch 
+                        >
+                            <View style={styles.cardBody}>
+                                <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                <Text style={styles.cardTitle}>Website Development</Text>
+                                <Text style={styles.cardText}>
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    </View>
+
+                    <View style={styles.column}>
+                        <TouchableHighlight
+                            style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                            activeOpacity={0.7}
+                            underlayColor="#008000" // Highlight color on touch 
+                        >
+                            <View style={styles.cardBody}>
+                                <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                <Text style={styles.cardTitle}>Website Development</Text>
+                                <Text style={styles.cardText}>
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    </View>
+                </>
+
+            ) : (
+                <>
+                    <View style={styles.row}>
+
+                        <View style={styles.column}>
+                            <TouchableHighlight
+                                style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                                activeOpacity={0.7}
+                                underlayColor="#008000" // Highlight color on touch 
+                            >
+                                <View style={styles.cardBody}>
+                                    <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
+                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardText}>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </Text>
+                                </View>
+                            </TouchableHighlight>
                         </View>
-                    </TouchableHighlight>
-                </View>
 
 
-                <View style={styles.column}>
-                    <TouchableHighlight
-                        style={[styles.card, styles.servicesText, styles.cardWithBorder]}
-                        activeOpacity={0.7}
-                        underlayColor="#008000" // Highlight color on touch 
-                    >
-                        <View style={styles.cardBody}>
-                        <FontAwesomeIcon icon={faLayerGroup} size="1x" style={styles.servicesIcon} />
-                            <Text style={styles.cardTitle}>Website Development</Text>
-                            <Text style={styles.cardText}>
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </Text>
+                        <View style={styles.column}>
+                            <TouchableHighlight
+                                style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                                activeOpacity={0.7}
+                                underlayColor="#008000" // Highlight color on touch 
+                            >
+                                <View style={styles.cardBody}>
+                                    <FontAwesomeIcon icon={faLayerGroup} size="1x" style={styles.servicesIcon} />
+                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardText}>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </Text>
+                                </View>
+                            </TouchableHighlight>
                         </View>
-                    </TouchableHighlight>
-                </View>
 
 
-                <View style={styles.column}>
-                    <TouchableHighlight
-                        style={[styles.card, styles.servicesText, styles.cardWithBorder]}
-                        activeOpacity={0.7}
-                        underlayColor="#008000" // Highlight color on touch 
-                    >
-                        <View style={styles.cardBody}>
-                        <FontAwesomeIcon icon={faCheckCircle} size="1x" style={styles.servicesIcon} />
-                            <Text style={styles.cardTitle}>Website Development</Text>
-                            <Text style={styles.cardText}>
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </Text>
+                        <View style={styles.column}>
+                            <TouchableHighlight
+                                style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                                activeOpacity={0.7}
+                                underlayColor="#008000" // Highlight color on touch 
+                            >
+                                <View style={styles.cardBody}>
+                                    <FontAwesomeIcon icon={faCheckCircle} size="1x" style={styles.servicesIcon} />
+                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardText}>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </Text>
+                                </View>
+                            </TouchableHighlight>
                         </View>
-                    </TouchableHighlight>
-                </View>
 
-                {/* Repeat the above structure for other services */}
+                    </View>
 
-            </View>
+                    {/* Add another row */}
+                    <View style={styles.row}>
 
-            {/* Add another row */}
-            <View style={styles.row}>
-
-            <View style={styles.column}>
-                    <TouchableHighlight
-                        style={[styles.card, styles.servicesText, styles.cardWithBorder]}
-                        activeOpacity={0.7}
-                        underlayColor="#008000" // Highlight color on touch 
-                    >
-                        <View style={styles.cardBody}>
-                        <FontAwesomeIcon icon={faSearch} size="1x" style={styles.servicesIcon} />
-                            <Text style={styles.cardTitle}>Website Development</Text>
-                            <Text style={styles.cardText}>
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </Text>
+                        <View style={styles.column}>
+                            <TouchableHighlight
+                                style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                                activeOpacity={0.7}
+                                underlayColor="#008000" // Highlight color on touch 
+                            >
+                                <View style={styles.cardBody}>
+                                    <FontAwesomeIcon icon={faSearch} size="1x" style={styles.servicesIcon} />
+                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardText}>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </Text>
+                                </View>
+                            </TouchableHighlight>
                         </View>
-                    </TouchableHighlight>
-                </View>
 
-                <View style={styles.column}>
-                    <TouchableHighlight
-                        style={[styles.card, styles.servicesText, styles.cardWithBorder]}
-                        activeOpacity={0.7}
-                        underlayColor="#008000" // Highlight color on touch 
-                    >
-                        <View style={styles.cardBody}>
-                        <FontAwesomeIcon icon={faShieldAlt} size="1x" style={styles.servicesIcon} />
-                            <Text style={styles.cardTitle}>Website Development</Text>
-                            <Text style={styles.cardText}>
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </Text>
+                        <View style={styles.column}>
+                            <TouchableHighlight
+                                style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                                activeOpacity={0.7}
+                                underlayColor="#008000" // Highlight color on touch 
+                            >
+                                <View style={styles.cardBody}>
+                                    <FontAwesomeIcon icon={faShieldAlt} size="1x" style={styles.servicesIcon} />
+                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardText}>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </Text>
+                                </View>
+                            </TouchableHighlight>
                         </View>
-                    </TouchableHighlight>
-                </View>
 
-                <View style={styles.column}>
-                    <TouchableHighlight
-                        style={[styles.card, styles.servicesText, styles.cardWithBorder]}
-                        activeOpacity={0.7}
-                        underlayColor="#008000" // Highlight color on touch 
-                    >
-                        <View style={styles.cardBody}>
-                        <FontAwesomeIcon icon={faWrench} size="1x" style={styles.servicesIcon} />
-                            <Text style={styles.cardTitle}>Website Development</Text>
-                            <Text style={styles.cardText}>
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </Text>
+                        <View style={styles.column}>
+                            <TouchableHighlight
+                                style={[styles.card, styles.servicesText, styles.cardWithBorder]}
+                                activeOpacity={0.7}
+                                underlayColor="#008000" // Highlight color on touch 
+                            >
+                                <View style={styles.cardBody}>
+                                    <FontAwesomeIcon icon={faWrench} size="1x" style={styles.servicesIcon} />
+                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardText}>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </Text>
+                                </View>
+                            </TouchableHighlight>
                         </View>
-                    </TouchableHighlight>
-                </View>
 
-                {/* ... Repeat the above structure for other services */}
+                    </View>
+                </>
 
-            </View>
+            )}
+
+
         </View>
     );
 };
+
 
 const styles = StyleSheet.create({
 
     cardWithBorder: {
         borderColor: 'black', // Add border color
         borderWidth: 1, // Add border width
-     },
+    },
     container: {
         marginTop: 16,
         padding: 16,
@@ -144,12 +251,18 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginBottom: 16,
+        marginLeft: 100,
+        marginRight:100,
     },
     column: {
+        width: isMobile ? '100%' : '30%',
+        marginBottom: isMobile ? 16 : 0,
+        marginRight: isMobile ? 0 : 16,
+        marginLeft: isMobile ? 0 : 16,
         flex: 1,
-        marginRight: 8,
+        //marginRight: 8,
         padding: 20,
-        width: '20%'
+        //width: '20%'
     },
     card: {
         height: 280,
