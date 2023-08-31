@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     maxWidth: '100%',
-    //width: 500,
+    width: 400,
     padding: 10,
   },
   input: {
