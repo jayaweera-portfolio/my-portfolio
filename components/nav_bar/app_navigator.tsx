@@ -1,29 +1,63 @@
-// AppNavigator.js
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from '../hero_section/hero_section';
-import AboutScreen from '../about_me_section/about_me';
-import ServicesScreen from '../servises_section/my_services';
-import PortfolioScreen from '../portfolio_section/my_portfolio';
-import ContactsScreen from '../contact_section/contact_section';
-import NavigationBar from './nav_bar';
+import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './navigation_bar.css';
+//import { Linking } from 'react-native';
+//import Contact from '../contact_section/contact_section';
+//import MyPortfolio from '../portfolio_section/my_portfolio';
+//import MyServices from '../servises_section/my_services';
+import AboutMeSection from '../about_me_section/about_me';
 
-const Drawer = createDrawerNavigator();
+const Navbar = () => {
+  const [scrolling, setScrolling] = useState(false);
+  //const aboutMeRef = useRef(AboutMeSection);
 
-const AppNavigator = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 400) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="About" component={AboutScreen} />
-        <Drawer.Screen name="Services" component={ServicesScreen} />
-        <Drawer.Screen name="Portfolio" component={PortfolioScreen} />
-        <Drawer.Screen name="Contacts" component={ContactsScreen} />
-      </Drawer.Navigator>
-      <NavigationBar /> {/* Include the NavigationBar component */}
-    </NavigationContainer>
+    <nav className={`navbar navbar-expand-lg fixed-top ${scrolling ? 'navbarDark' : ''} navbarScroll`}>
+      <div className="container">
+
+        <a className="navbar-brand" href="#">Welcome</a>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#" >Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={AboutMeSection}>About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={AboutMeSection}>Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={AboutMeSection}>Portfolio</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={AboutMeSection}>Contact</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
   );
 };
 
-export default AppNavigator;
+export default Navbar;

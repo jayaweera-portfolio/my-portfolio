@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "ReactNativeWebApp",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",

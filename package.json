@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeWebApp",
+  "name": "public",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +8,8 @@
     "web": "cd web && webpack-dev-server",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --config web/webpack.config.js"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
