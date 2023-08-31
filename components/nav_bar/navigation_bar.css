@@ -1,0 +1,19 @@
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: green;
+  }
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: green;
+}
