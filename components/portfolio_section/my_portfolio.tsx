@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Image, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Image, Dimensions, TouchableOpacity, Linking } from 'react-native';
 import portfolioImage1 from '../../assets/portfolioImage1.jpg';
 import portfolioImage2 from '../../assets/portfolioImage2.jpg';
 import portfolioImage3 from '../../assets/portfolioImage3.jpg';
@@ -10,7 +10,15 @@ const windowWidth = Dimensions.get('window').width;
 const isMobile = windowWidth < 768;
 
 const MyPortfolio = () => {
+
+        // Function to open the URL when the button is pressed
+        const handleLinkPress = (url: string) => {
+            Linking.openURL(url);
+        };
+
     return (
+
+        
         <ScrollView style={styles.container}>
             <Text style={styles.title}>Portfolio</Text>
 
@@ -22,10 +30,14 @@ const MyPortfolio = () => {
                         <View style={[styles.card, styles.cardWithBorder]}>
                             <Image source={portfolioImage1} style={styles.cardImage} />
                             <View style={styles.cardBody}>
-                                <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                <Text style={styles.cardTitle}>Snake Identifier</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
-                                    <Text style={styles.link}>Link</Text>
+                                <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
@@ -35,7 +47,7 @@ const MyPortfolio = () => {
                         <View style={[styles.card, styles.cardWithBorder]}>
                             <Image source={portfolioImage4} style={styles.cardImage} />
                             <View style={styles.cardBody}>
-                                <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                <Text style={styles.cardTitle}>wheather App</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
                                     <Text style={styles.link}>Link</Text>
@@ -48,7 +60,7 @@ const MyPortfolio = () => {
                         <View style={[styles.card, styles.cardWithBorder]}>
                             <Image source={portfolioImage3} style={styles.cardImage} />
                             <View style={styles.cardBody}>
-                                <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                <Text style={styles.cardTitle}>Time Management system</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
                                     <Text style={styles.link}>Link</Text>
@@ -253,6 +265,18 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: 'green', // Customize the link color
     },
+    button: {
+        backgroundColor: 'green',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+      },
+      buttonText: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 'bold',
+        textAlign: 'center',
+      },
 });
 
 export default MyPortfolio;
