@@ -10,6 +10,7 @@
     "start": "react-native start",
     "test": "jest",
     "build": "webpack --config web/webpack.config.js"
+   
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
