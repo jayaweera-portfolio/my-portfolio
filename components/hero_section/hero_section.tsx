@@ -6,7 +6,8 @@ const windowWidth = Dimensions.get('window').width;
 
 const HeroSection = () => {
   return (
-    <ImageBackground source={heroImage} style={styles.bgimage} resizeMode="cover">
+
+    <ImageBackground id='home' source={heroImage} style={styles.bgimage} resizeMode="cover">
       <View style={styles.overlay}>
         <View style={styles.text}>
           <Text style={styles.text1}>Hi, it's me Sachithra</Text>
@@ -14,6 +15,7 @@ const HeroSection = () => {
         </View>
       </View>
     </ImageBackground>
+  
   );
 };
 

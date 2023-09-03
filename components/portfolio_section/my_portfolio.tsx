@@ -19,7 +19,7 @@ const MyPortfolio = () => {
     return (
 
         
-        <ScrollView style={styles.container}>
+        <ScrollView id='portfolio' style={styles.container}>
             <Text style={styles.title}>Portfolio</Text>
 
             {isMobile ? (
@@ -50,7 +50,11 @@ const MyPortfolio = () => {
                                 <Text style={styles.cardTitle}>wheather App</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
-                                    <Text style={styles.link}>Link</Text>
+                                <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
@@ -63,7 +67,11 @@ const MyPortfolio = () => {
                                 <Text style={styles.cardTitle}>Time Management system</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
-                                    <Text style={styles.link}>Link</Text>
+                                <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
@@ -73,10 +81,14 @@ const MyPortfolio = () => {
                         <View style={[styles.card, styles.cardWithBorder]}>
                             <Image source={portfolioImage2} style={styles.cardImage} />
                             <View style={styles.cardBody}>
-                                <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                <Text style={styles.cardTitle}>React Native portfolio</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
-                                    <Text style={styles.link}>Link</Text>
+                                <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
@@ -86,10 +98,14 @@ const MyPortfolio = () => {
                         <View style={[styles.card, styles.cardWithBorder]}>
                             <Image source={portfolioImage1} style={styles.cardImage} />
                             <View style={styles.cardBody}>
-                                <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                <Text style={styles.cardTitle}>Smart Farming App</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
-                                    <Text style={styles.link}>Link</Text>
+                                <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
@@ -102,7 +118,11 @@ const MyPortfolio = () => {
                                 <Text style={styles.cardTitle}>YouTube Clone</Text>
                                 <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                 <View style={styles.textCenter}>
-                                    <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
@@ -119,10 +139,14 @@ const MyPortfolio = () => {
                             <View style={[styles.card, styles.cardWithBorder]}>
                                 <Image source={portfolioImage1} style={styles.cardImage} />
                                 <View style={styles.cardBody}>
-                                    <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                    <Text style={styles.cardTitle}>Snake Identifier</Text>
                                     <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                     <View style={styles.textCenter}>
-                                        <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
@@ -132,10 +156,14 @@ const MyPortfolio = () => {
                             <View style={[styles.card, styles.cardWithBorder]}>
                                 <Image source={portfolioImage4} style={styles.cardImage} />
                                 <View style={styles.cardBody}>
-                                    <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                    <Text style={styles.cardTitle}>wheather App</Text>
                                     <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                     <View style={styles.textCenter}>
-                                        <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
@@ -145,10 +173,14 @@ const MyPortfolio = () => {
                             <View style={[styles.card, styles.cardWithBorder]}>
                                 <Image source={portfolioImage3} style={styles.cardImage} />
                                 <View style={styles.cardBody}>
-                                    <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                    <Text style={styles.cardTitle}>Time Management system</Text>
                                     <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                     <View style={styles.textCenter}>
-                                        <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
@@ -164,7 +196,11 @@ const MyPortfolio = () => {
                                     <Text style={styles.cardTitle}>YouTube Clone</Text>
                                     <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                     <View style={styles.textCenter}>
-                                        <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
@@ -174,10 +210,14 @@ const MyPortfolio = () => {
                             <View style={[styles.card, styles.cardWithBorder]}>
                                 <Image source={portfolioImage1} style={styles.cardImage} />
                                 <View style={styles.cardBody}>
-                                    <Text style={styles.cardTitle}>YouTube Clone</Text>
+                                    <Text style={styles.cardTitle}>Smart Farming App</Text>
                                     <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                     <View style={styles.textCenter}>
-                                        <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
@@ -190,7 +230,11 @@ const MyPortfolio = () => {
                                     <Text style={styles.cardTitle}>YouTube Clone</Text>
                                     <Text style={styles.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                                     <View style={styles.textCenter}>
-                                        <Text style={styles.link}>Link</Text>
+                                    <TouchableOpacity onPress={() => handleLinkPress('https://example.com')}>
+                                     <View style={styles.button}>
+                                        <Text style={styles.buttonText}>Link</Text>
+                                    </View>
+                                    </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
@@ -262,12 +306,13 @@ const styles = StyleSheet.create({
     },
     link: {
         marginTop: 20,
-        fontSize: 16,
+        fontSize: 12,
         color: 'green', // Customize the link color
     },
     button: {
+        marginTop: 5,
         backgroundColor: 'green',
-        paddingVertical: 10,
+        paddingVertical: 7,
         paddingHorizontal: 20,
         borderRadius: 5,
       },

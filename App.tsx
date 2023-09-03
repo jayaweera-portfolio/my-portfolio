@@ -8,6 +8,7 @@ import MyServices from './components/servises_section/my_services';
 import AboutMeSection from './components/about_me_section/about_me';
 import NavigationBar from './components/nav_bar/app_navigator';
 
+
 const App = () => {
   return (
     <View style={styles.appContainer}>

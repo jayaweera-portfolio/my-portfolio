@@ -4,9 +4,12 @@ import About from '../../assets/about2.jpeg';
 
 const windowWidth = Dimensions.get('window').width;
 
+
+
 const AboutMeSection = () => {
   return (
-    <View style={styles.about}>
+  
+    <View id='about' style={styles.about}>
       <Text style={styles.heading}>About Me</Text>
       <ScrollView style={styles.scrollView}>
         <View style={styles.aboutMe}>
@@ -17,10 +20,7 @@ const AboutMeSection = () => {
 
           <View style={styles.content}>
             <Text style={styles.paragraph}>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.
+            As an experienced developer with a focus on Internet of Things (IoT) and web development, I am passionate about leveraging cutting-edge technologies to build innovative solutions. My expertise in developing scalable and secure web applications, combined with my deep knowledge of IoT hardware and software, allows me to create robust systems that integrate seamlessly with the digital world. I thrive in collaborative environments and enjoy working with cross-functional teams to bring ideas to life.
             </Text>
             <View style={styles.list}>
               <Text>Name: Sachithra Jayaweera</Text>
@@ -28,21 +28,17 @@ const AboutMeSection = () => {
               <Text>Occupation: Web Developer</Text>
             </View>
             <Text style={styles.paragraph}>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.
+            As an experienced developer with a focus on Internet of Things (IoT) and web development, I am passionate about leveraging cutting-edge technologies to build innovative solutions. My expertise in developing scalable and secure web applications, combined with my deep knowledge of IoT hardware and software, allows me to create robust systems that integrate seamlessly with the digital world. I thrive in collaborative environments and enjoy working with cross-functional teams to bring ideas to life.
             </Text>
           </View>
         </View>
       </ScrollView>
     </View>
+
   );
 };
+
+
 
 const styles = StyleSheet.create({
   about: {
