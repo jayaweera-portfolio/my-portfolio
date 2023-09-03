@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
 const MyServices = () => {
 
     return (
-        <View style={styles.container}>
+        <View id='services' style={styles.container}>
             <Text style={styles.title}>Services</Text>
 
             {isMobile ? (
@@ -193,7 +193,7 @@ const MyServices = () => {
                                     <FontAwesomeIcon icon={faClock} size="1x" style={styles.servicesIcon} />
                                     <Text style={styles.cardTitle}>Website Development</Text>
                                     <Text style={styles.cardText}>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    The process of creating and coding the functional components and features of a website.
                                     </Text>
                                 </View>
                             </TouchableHighlight>
@@ -208,9 +208,9 @@ const MyServices = () => {
                             >
                                 <View style={styles.cardBody}>
                                     <FontAwesomeIcon icon={faLayerGroup} size="1x" style={styles.servicesIcon} />
-                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardTitle}>Website Design</Text>
                                     <Text style={styles.cardText}>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    The visual and user experience planning and creation of the look, layout, and interactivity of a website.
                                     </Text>
                                 </View>
                             </TouchableHighlight>
@@ -225,9 +225,9 @@ const MyServices = () => {
                             >
                                 <View style={styles.cardBody}>
                                     <FontAwesomeIcon icon={faCheckCircle} size="1x" style={styles.servicesIcon} />
-                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardTitle}>Website Deployment</Text>
                                     <Text style={styles.cardText}>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    The act of making a website accessible and live on the internet for users to access.
                                     </Text>
                                 </View>
                             </TouchableHighlight>
@@ -246,9 +246,9 @@ const MyServices = () => {
                             >
                                 <View style={styles.cardBody}>
                                     <FontAwesomeIcon icon={faSearch} size="1x" style={styles.servicesIcon} />
-                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardTitle}>SEO</Text>
                                     <Text style={styles.cardText}>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    The practice of optimizing a website's content and structure to improve its visibility and ranking on search engines.
                                     </Text>
                                 </View>
                             </TouchableHighlight>
@@ -262,9 +262,9 @@ const MyServices = () => {
                             >
                                 <View style={styles.cardBody}>
                                     <FontAwesomeIcon icon={faShieldAlt} size="1x" style={styles.servicesIcon} />
-                                    <Text style={styles.cardTitle}>Website Development</Text>
+                                    <Text style={styles.cardTitle}>DevOps</Text>
                                     <Text style={styles.cardText}>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    A set of practices and tools that combine software development (Dev) and IT operations (Ops) to automate
                                     </Text>
                                 </View>
                             </TouchableHighlight>
@@ -278,9 +278,9 @@ const MyServices = () => {
                             >
                                 <View style={styles.cardBody}>
                                     <FontAwesomeIcon icon={faWrench} size="1x" style={styles.servicesIcon} />
-                                    <Text style={styles.cardTitle}>Website Development</Text>
-                                    <Text style={styles.cardText}>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    <Text style={styles.cardTitle}>QA</Text>
+                                    <Text style={styles.cardText}>z
+                                    The systematic process of ensuring the quality and reliability of software or products through testing, analysis, and validation.
                                     </Text>
                                 </View>
                             </TouchableHighlight>
